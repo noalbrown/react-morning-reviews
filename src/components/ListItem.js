@@ -8,7 +8,8 @@ const ListItem = (props) => {
             <p>{movie.title}</p>
             <p>{movie.year}</p>
         </div>
-    </div>
+        <p className="delete-button" onClick={() => deleteMovie(movie.id)}>X</p>
+    </div >
 }
 
 export default ListItem;
